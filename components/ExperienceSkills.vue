@@ -1,0 +1,89 @@
+<template>
+  <section id="experience" class="pt-8">
+    <div class="wrap two grid gap-12 grid-cols-1 md:grid-cols-12 items-start">
+      <!-- Experience Card (5 cols) -->
+      <div class="card exp md:col-span-5 bg-sun text-ink shadow-none relative p-6 rounded-bento">
+        <span class="sticker m tiny">Experience</span>
+        <h3 class="mt-3.5 font-extrabold text-lg text-ink">Computer Operator Assistant Intern</h3>
+        <p class="mt-1 font-bold text-sm text-ink/90">Statistics Indonesia (BPS) Kabupaten Kepulauan Seribu</p>
+        <span class="text-xs text-ink/75 block mt-0.5">Dec 2025 – Jun 2026</span>
+        <ul class="pl-4 mt-3.5 grid gap-2 text-xs list-disc text-ink">
+          <li>Prepared, organized, and managed statistical data to support official institutional publications and reporting.</li>
+          <li>Developed <strong>SIMPONI</strong>, a web-based budget and honorarium monitoring system utilizing MySQL.</li>
+          <li>Designed data monitoring features and data-driven infographics for regional statistical reporting.</li>
+        </ul>
+
+        <!-- Mascot 2 SVG -->
+        <svg class="m2 absolute right-[-10px] bottom-[-34px] w-[84px] rotate-6" viewBox="0 0 100 100">
+          <circle cx="50" cy="55" r="36" fill="#3FDF9F"/>
+          <circle cx="38" cy="50" r="4" fill="#21281B"/>
+          <circle cx="62" cy="50" r="4" fill="#21281B"/>
+          <path d="M40 66Q50 72 60 66" stroke="#21281B" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M36 22Q42 6 50 20Q58 6 64 22" stroke="#21281B" stroke-width="3" fill="none" stroke-linecap="round"/>
+        </svg>
+      </div>
+
+      <!-- Skills Matrix (7 cols) -->
+      <div id="skills" class="sk md:col-span-7 grid gap-5">
+        <h2 class="text-tx">
+          <span class="inline-block w-2 h-2 rounded-full bg-act mr-2.5 align-middle"></span>
+          Skills
+        </h2>
+
+        <div>
+          <h3 class="text-sm font-extrabold text-tx mb-2">Programming &amp; Databases</h3>
+          <div class="flex flex-wrap">
+            <span class="chip">Python</span>
+            <span class="chip">SQL</span>
+            <span class="chip">DuckDB</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">SQLite</span>
+          </div>
+        </div>
+
+        <div class="y">
+          <h3 class="text-sm font-extrabold text-tx mb-2">Python &amp; Data Analysis</h3>
+          <div class="flex flex-wrap">
+            <span class="chip bg-sun text-ink border-ink">pandas</span>
+            <span class="chip bg-sun text-ink border-ink">NumPy</span>
+            <span class="chip bg-sun text-ink border-ink">Data Profiling</span>
+            <span class="chip bg-sun text-ink border-ink">Wrangling</span>
+            <span class="chip bg-sun text-ink border-ink">Multi-Source Integration</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-extrabold text-tx mb-2">Data Quality &amp; Governance</h3>
+          <div class="flex flex-wrap">
+            <span class="chip">Grain Check</span>
+            <span class="chip">PK/FK Integrity</span>
+            <span class="chip">PII Anonymization</span>
+            <span class="chip">Cleaning Rulebooks</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-extrabold text-tx mb-2">Visualization &amp; Frontend</h3>
+          <div class="flex flex-wrap">
+            <span class="chip">Plotly/HTML Dashboards</span>
+            <span class="chip">Data Storytelling</span>
+            <span class="chip">Basic React</span>
+            <span class="chip">HTML/CSS</span>
+            <span class="chip">Figma</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-extrabold text-tx mb-2">Tools &amp; Environment</h3>
+          <div class="flex flex-wrap">
+            <span class="chip">Jupyter Notebook</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">Git</span>
+            <span class="chip">Excel</span>
+            <span class="chip">Linux (Ubuntu)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>

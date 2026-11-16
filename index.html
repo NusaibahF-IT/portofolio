@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nusaibah Fathul Jannah — Data Analyst</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FBFCFC;--card:#FBFCFC;--tx:#21281B;--field:#3FDF9F;--act:#00D26A;--sun:#F8C33A;--mag:#F108B0;--ink:#21281B;--line:rgba(33,40,27,.1);--sh:0 8px 24px rgba(33,40,27,.07);--back:cubic-bezier(.34,1.56,.64,1);box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161B12;--card:#1F261A;--tx:#F1F5EC;--line:rgba(241,245,236,.12);--sh:0 8px 24px rgba(0,0,0,.3)}}
+:root[data-theme="dark"]{--bg:#161B12;--card:#1F261A;--tx:#F1F5EC;--line:rgba(241,245,236,.12);--sh:0 8px 24px rgba(0,0,0,.3)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(64px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 14px/1.55 Outfit,system-ui,sans-serif;overflow-x:hidden;transition:background-color .25s ease,color .25s ease}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:0 auto;padding:0 24px}
+section{padding:96px 0;position:relative}
+h1,h2,h3{margin:0;font-weight:800;letter-spacing:-.02em}
+h1{font-size:clamp(30px,4.6vw,44px);line-height:1.1;font-weight:900}
+h2{font-size:26px;line-height:1.15}
+h3{font-size:18px;line-height:1.25}
+p{margin:0}
+.lead{font-size:14px;opacity:.78;max-width:38ch;margin-top:16px}
+.tiny{font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+/* header */
+header{position:fixed;top:0;left:0;right:0;z-index:50;background:var(--bg);padding-top:env(safe-area-inset-top,0px);transition:box-shadow .2s}
+header.s{box-shadow:0 4px 18px rgba(33,40,27,.1)}
+.nav{display:flex;align-items:center;gap:20px;height:56px}
+.logo{font-weight:900;font-size:16px;letter-spacing:.06em;text-transform:uppercase;margin-right:auto}
+.nav a.l{font-size:13px;font-weight:500;opacity:.8;position:relative;display:none}
+.nav a.l::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:var(--act);transform:scaleX(0);transform-origin:left;transition:transform .15s ease-out}
+.nav a.l:hover::after{transform:scaleX(1)}
+@media(min-width:860px){.nav a.l{display:block}}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:6px;border-radius:999px;padding:8px 18px;font:700 13px Outfit,sans-serif;border:1.5px solid var(--ink);cursor:pointer;transition:transform .18s var(--back),background .15s}
+.btn.p{background:var(--ink);color:#fff}
+.btn.p:hover{background:#3a4531;transform:translateY(-1px)}
+.btn.o{background:transparent;color:var(--tx);border-color:var(--tx)}
+.btn.o:hover{transform:translateY(-1px);background:rgba(33,40,27,.05)}
+.btn:active{transform:scale(.96,.96)}
+.btn.w{background:#FBFCFC;color:var(--ink);border-color:#FBFCFC;padding:10px 28px;font-size:14px}
+.btn.w:hover{background:#f0f4f1;transform:translateY(-1px)}
+.theme-btn{padding:6px;border-radius:999px;border:1px solid var(--line);background:transparent;color:var(--tx);cursor:pointer;font-size:13px;width:32px;height:32px;display:flex;align-items:center;justify-content:center;transition:background .15s}
+.theme-btn:hover{background:var(--card)}
+.btn.hide{display:none}
+@media(min-width:560px){.btn.hide{display:inline-flex}}
+:focus-visible{outline:3px solid var(--mag);outline-offset:3px}
+/* hero */
+.hero{padding:120px 0 150px;overflow:visible}
+.blob{position:absolute;left:-4vw;right:-4vw;top:0;height:100%;z-index:0;pointer-events:none}
+.blob svg{width:100%;height:100%;display:block;animation:breathe 10s ease-in-out infinite;transform-origin:50% 0}
+@keyframes breathe{50%{transform:scale(1.015,1.04)}}
+.hg{position:relative;z-index:2;display:grid;gap:40px;grid-template-columns:1fr;align-items:center}
+@media(min-width:900px){.hg{grid-template-columns:6fr 6fr}}
+.hero h1,.hero .lead,.hero .btn,.hero .tiny{color:var(--ink)}
+.hero .lead{max-width:44ch;opacity:.85}
+.cta{display:flex;gap:12px;margin-top:24px;flex-wrap:wrap}
+.hero .btn.o{border-color:var(--ink);color:var(--ink)}
+.cluster{position:relative;min-height:340px}
+.wd{position:absolute;background:var(--card);color:var(--tx);border-radius:12px;padding:14px 16px;box-shadow:var(--sh);animation:drift 6s ease-in-out infinite}
+.wd b{font-size:18px;font-weight:800;display:block;line-height:1.1}
+.w1{left:2%;top:8%;rotate:-4deg}
+.w2{right:4%;top:0;rotate:3deg;animation-delay:-2s;animation-duration:5s}
+.w3{left:22%;bottom:4%;rotate:2deg;animation-delay:-4s;animation-duration:7s;width:210px}
+.w4{right:0;bottom:18%;rotate:-3deg;animation-delay:-1s}
+@keyframes drift{50%{transform:translateY(-9px)}}
+.bars{display:flex;align-items:flex-end;gap:5px;height:44px;margin-top:8px}
+.bars i{flex:1;border-radius:4px;background:var(--field);transform-origin:bottom;animation:grow .5s var(--back) both}
+.bars i:nth-child(2n){background:var(--sun)}.bars i:nth-child(3){background:var(--mag)}.bars i:nth-child(5){background:var(--ink)}
+@keyframes grow{from{transform:scaleY(0)}}
+.ring{width:64px;height:64px;position:relative}
+.ring svg{width:64px;height:64px;transform:rotate(-90deg)}
+.ring span{position:absolute;inset:0;display:grid;place-items:center;font-weight:800;font-size:13px;color:#fff}
+.ring circle.v{stroke-dasharray:157;stroke-dashoffset:157;animation:fill 1.2s .4s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes fill{to{stroke-dashoffset:0}}
+.mascot{position:absolute;z-index:3}
+.m1{width:96px;left:-8px;bottom:-26px;animation:bob 4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-6px) rotate(3deg)}}
+.mascot:hover{rotate:3deg;transition:rotate .2s var(--back)}
+.sticker{display:inline-block;background:var(--sun);color:var(--ink);border:1px solid var(--ink);box-shadow:2px 2px 0 var(--ink);border-radius:6px;padding:4px 9px;rotate:-7deg;transition:rotate .2s var(--back)}
+.sticker:hover{rotate:-5deg}
+.sticker.m{background:var(--mag)}
+/* kpi strip */
+.kpi{display:grid;grid-template-columns:repeat(2,1fr);gap:28px 24px;padding:56px 0 0}
+@media(min-width:860px){.kpi{grid-template-columns:repeat(4,1fr)}}
+.kpi b{display:block;font-size:26px;font-weight:900;letter-spacing:-.02em;line-height:1.1}
+.kpi span{font-size:12px;opacity:.75;display:block;margin-top:6px;max-width:26ch}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--act);margin-right:10px;vertical-align:middle}
+.intro{text-align:center}
+.intro p{max-width:350px;margin:16px auto 0;opacity:.8}
+/* projects bento */
+.bento{display:grid;gap:24px;margin-top:48px;grid-template-columns:1fr}
+@media(min-width:900px){.bento{grid-template-columns:7fr 5fr}.flag{grid-row:span 2}}
+.card{background:var(--card);border-radius:16px;padding:24px;box-shadow:var(--sh);position:relative}
+.flag{background:var(--mag);color:var(--ink);box-shadow:none;padding:28px}
+.flag .chip{background:rgba(251,252,252,.9);color:var(--ink)}
+.chip{display:inline-block;font-size:11px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:3px 10px;margin:0 6px 6px 0}
+.flag ul{padding-left:18px;margin:16px 0;display:grid;gap:10px;font-size:13px}
+.flag h3{font-size:22px}
+.acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.flag .btn.p{background:var(--ink)}
+.flag .btn.o{color:var(--ink);border-color:var(--ink)}
+.flag .sticker{position:absolute;right:16px;top:-14px}
+.mini{font-size:13px;opacity:.85;margin-top:10px}
+/* pipeline */
+.pipe{background:var(--field);border-radius:60px 100px 60px 100px;padding:56px 32px;color:var(--ink);position:relative;overflow:hidden}
+.pipe h2{max-width:20ch}
+.pipe .lead{color:var(--ink)}
+.lane{display:grid;gap:24px;margin-top:40px;grid-template-columns:1fr;align-items:center}
+@media(min-width:800px){.lane{grid-template-columns:1fr 120px 1fr}}
+.srcs{display:flex;flex-wrap:wrap;gap:10px}
+.src{background:#FBFCFC;border-radius:12px;padding:10px 14px;font:500 13px "JetBrains Mono",monospace;color:var(--ink);opacity:0;transform:translateY(-20px) scale(.9)}
+.go .src{animation:land .35s var(--back) forwards;animation-delay:calc(var(--i)*.12s)}
+@keyframes land{to{opacity:1;transform:none}}
+.arrow{height:6px;background:var(--ink);border-radius:3px;transform:scaleX(0);transform-origin:left;position:relative}
+.go .arrow{animation:draw .5s .7s ease-out forwards}
+@keyframes draw{to{transform:scaleX(1)}}
+.out{background:#FBFCFC;border-radius:16px;padding:18px;display:grid;gap:8px;font-size:13px;opacity:0;transform:scale(.9)}
+.go .out{animation:land .4s 1.1s var(--back) forwards}
+.out div{display:flex;justify-content:space-between;gap:12px}
+.out i{font-style:normal;font-weight:800;background:var(--act);color:var(--ink);border-radius:999px;padding:0 10px;font-size:11px;line-height:20px}
+/* experience + skills */
+.two{display:grid;gap:48px;grid-template-columns:1fr}
+@media(min-width:900px){.two{grid-template-columns:5fr 7fr;align-items:start}}
+.exp{position:relative}
+.exp .m2{position:absolute;right:-10px;bottom:-34px;width:84px;rotate:6deg}
+.exp ul{padding-left:18px;margin:14px 0 0;display:grid;gap:8px}
+.sk{display:grid;gap:22px}
+.sk h3{font-size:14px;margin-bottom:8px;display:flex;align-items:center}
+.sk .chip{background:var(--card);font-weight:500}
+.sk .y .chip{background:var(--sun);color:var(--ink);border-color:var(--ink)}
+.edu{display:grid;gap:24px;grid-template-columns:1fr;margin-top:40px}
+@media(min-width:900px){.edu{grid-template-columns:6fr 6fr}}
+.edu .big{background:var(--sun);color:var(--ink);box-shadow:none}
+.edu .big b{font-size:44px;font-weight:900;letter-spacing:-.03em;display:block;line-height:1}
+.cert{display:grid;gap:14px}
+.cert div{padding-bottom:14px;border-bottom:1px solid var(--line)}
+.cert div:last-child{border:0;padding:0}
+.cert span{font-size:12px;opacity:.75;display:block}
+/* contact */
+.contact{background:var(--field);color:var(--ink);border-radius:80px 80px 0 0;padding:80px 0 56px}
+.contact .wrap{text-align:center}
+.contact h2{max-width:24ch;margin:0 auto;font-size:30px}
+.contact .cta{justify-content:center}
+.contact .btn.o{color:var(--ink);border-color:var(--ink)}
+.contact .m3{width:88px;margin:0 auto -10px;display:block;animation:bob 4s ease-in-out infinite}
+.contact p{margin-top:14px}
+footer{background:var(--field);color:var(--ink);text-align:center;font-size:12px;padding:0 24px 40px;padding-bottom:calc(40px + env(safe-area-inset-bottom,0px))}
+/* Modal */
+.modal-overlay{position:fixed;inset:0;background:rgba(33,40,27,.75);backdrop-filter:blur(4px);z-index:100;display:flex;align-items:center;justify-content:center;padding:16px;opacity:0;pointer-events:none;transition:opacity .25s ease}
+.modal-overlay.open{opacity:1;pointer-events:auto}
+.modal-box{background:var(--card);color:var(--tx);max-width:760px;width:100%;max-height:88vh;overflow-y:auto;border-radius:16px;padding:32px;box-shadow:0 20px 40px rgba(0,0,0,.35);position:relative;border:1px solid var(--line);transform:scale(.95);transition:transform .25s var(--back)}
+.modal-overlay.open .modal-box{transform:scale(1)}
+.close-btn{position:absolute;top:20px;right:20px;background:transparent;border:1px solid var(--line);color:var(--tx);border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:16px;display:flex;align-items:center;justify-content:center}
+.close-btn:hover{background:var(--bg)}
+/* reveal */
+.rv{opacity:0;transform:translateY(16px);transition:opacity .35s ease-out,transform .35s var(--back);transition-delay:calc(var(--d,0)*60ms)}
+.rv.in{opacity:1;transform:none}
+@media(max-width:600px){.hero{padding-top:100px}.cluster{min-height:300px}.w3{left:6%}.pipe{padding:40px 20px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:opacity .2s!important}.rv,.src,.out{opacity:1;transform:none}.arrow{transform:none}.ring circle.v{stroke-dashoffset:0}}
+</style>
+</head>
+<body>
+<header id="hd"><div class="wrap nav">
+<a class="logo" href="#top">NJ</a>
+<a class="l" href="#projects">Projects</a><a class="l" href="#experience">Experience</a><a class="l" href="#skills">Skills</a><a class="l" href="#education">Education</a><a class="l" href="#contact">Contact</a>
+<button id="themeToggle" class="theme-btn" title="Toggle theme">☀️</button>
+<a class="btn p" href="public/cv_nusaibah.pdf" target="_blank" download="CV_Nusaibah_Fathul_Jannah.pdf">Download Resume</a>
+<a class="btn o hide" href="#contact">Contact</a>
+</div></header>
+
+<main id="top">
+<section class="hero">
+<div class="blob" aria-hidden="true"><svg viewBox="0 0 1440 760" preserveAspectRatio="none"><path fill="#3FDF9F" d="M0 0H1440V560C1440 640 1400 700 1352 700C1304 700 1290 610 1240 610C1190 610 1180 740 1110 740C1040 740 1040 630 980 630C920 630 900 700 840 700C780 700 770 600 700 600C630 600 620 720 550 720C480 720 470 620 400 620C330 620 320 690 260 690C200 690 190 600 130 600C70 600 50 650 0 640Z"/></svg></div>
+<div class="wrap hg">
+<div>
+<span class="tiny rv">Data Analyst · Statistical Insights &amp; End-to-End Analytics Pipelines</span>
+<h1 class="rv" style="--d:1;margin-top:14px">Nusaibah Fathul Jannah turns messy files into numbers you can sign off on.</h1>
+<p class="lead rv" style="--d:2">Telecommunication Systems graduate (GPA 3.79/4.00) with hands-on experience at Statistics Indonesia (BPS) and an intensive Data Analyst with AI Bootcamp. Specialized in Python, SQL, multi-source data integration, rigorous data quality auditing, and interactive dashboard development.</p>
+<div class="cta rv" style="--d:3"><a class="btn p" href="#projects">Explore Case Studies</a><a class="btn w" href="#contact" style="padding:8px 18px;font-size:13px">Contact Me</a></div>
+</div>
+<div class="cluster" aria-hidden="true">
+<div class="wd w1"><span class="tiny" style="opacity:.7">Q1 GMV analyzed</span><b>IDR 41.57M+</b></div>
+<div class="wd w2"><div class="ring"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="30" fill="#21281B"/><circle class="v" cx="32" cy="32" r="25" fill="none" stroke="#00D26A" stroke-width="6" stroke-linecap="round"/></svg><span>100%</span></div></div>
+<div class="wd w3"><span class="tiny" style="opacity:.7">Late delivery by category</span><div class="bars"><i style="height:50%"></i><i style="height:100%"></i><i style="height:38%"></i><i style="height:62%"></i><i style="height:28%"></i></div></div>
+<div class="wd w4"><span class="tiny" style="opacity:.7">Formats merged</span><b>5</b></div>
+<svg class="mascot m1" viewBox="0 0 100 100"><ellipse cx="50" cy="58" rx="38" ry="34" fill="#F8C33A"/><path d="M22 34L30 12L44 30Z M78 34L70 12L56 30Z" fill="#F8C33A"/><circle cx="38" cy="54" r="4" fill="#21281B"/><circle cx="62" cy="54" r="4" fill="#21281B"/><path d="M42 68Q50 76 58 68" stroke="#21281B" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+</div>
+</div>
+</section>
+
+<div class="wrap"><div class="kpi">
+<div class="rv"><b>IDR 41.57M+</b><span>Q1 GMV analyzed</span></div>
+<div class="rv" style="--d:1"><b>100%</b><span>Grain integrity and zero PII leakage</span></div>
+<div class="rv" style="--d:2"><b>5 formats</b><span>CSV, JSON, XLSX, SQLite and Parquet consolidated</span></div>
+<div class="rv" style="--d:3"><b>BPS + BNSP</b><span>BPS certified; BNSP Web Development accredited</span></div>
+</div></div>
+
+<section id="projects">
+<div class="wrap">
+<div class="intro"><h2 class="rv"><span class="dot"></span>Three projects, each reconciled to the raw data</h2><p class="rv" style="--d:1">Every dashboard and pipeline below ships with checks that prove its totals.</p></div>
+<div class="bento">
+<article class="card flag rv">
+<span class="sticker tiny">Flagship capstone</span>
+<h3>SwiftBite — Business Performance &amp; Operational Delivery Analytics</h3>
+<p class="mini" style="opacity:.9">Audit of an on-demand food delivery platform: 320 unique transactions and 190 customer reviews across 5 city zones.</p>
+<ul>
+<li>The Loyal segment is the top revenue pillar: 27.55% of Net Payment (IDR 10.47M) and the highest average spend, IDR 126,229 per order.</li>
+<li>Fast Food is the bottleneck: 39.58% late deliveries against 28.47% overall, with delays up to 55 minutes.</li>
+<li>Delays line up with 30% negative reviews (cold food, spilled packaging). Proposed fixes: VIP dispatch, a 5 km radius limit and insulated thermal bags.</li>
+</ul>
+<p class="mini">Deliverable: standalone 4.9 MB interactive Plotly/HTML dashboard with 5 validated scenario filters and 0% discrepancy against raw data.</p>
+<div style="margin-top:14px"><span class="chip">Python</span><span class="chip">pandas</span><span class="chip">DuckDB</span><span class="chip">Plotly</span><span class="chip">HTML</span><span class="chip">Data Pipeline</span></div>
+<div class="acts">
+  <a class="btn p" href="public/SwiftBite_Dashboard_Final.html" target="_blank" rel="noopener">Live Dashboard ↗</a>
+  <button class="btn o" onclick="openModal()">Case Study Summary ↗</button>
+  <a class="btn o" href="https://github.com/NusaibahF-IT/portofolio.git" target="_blank" rel="noopener">GitHub ↗</a>
+</div>
+</article>
+<article class="card rv" style="--d:1">
+<h3>NusaMart — Safe &amp; Reproducible Multi-Source ETL Pipeline</h3>
+<p class="mini">Automated pipeline integrating CSV, JSON, Excel, SQLite and Parquet. Enforces primary/foreign key reconciliation, masks names, emails and phones, and reruns across historical periods without code changes.</p>
+<div style="margin-top:14px"><span class="chip">Python</span><span class="chip">pandas</span><span class="chip">SQL/DuckDB</span><span class="chip">SQLite</span><span class="chip">Parquet</span><span class="chip">Data Quality</span></div>
+<div class="acts">
+  <a class="btn p" href="#pipe">Pipeline Architecture ↗</a>
+  <a class="btn o" href="https://github.com/NusaibahF-IT/portofolio.git" target="_blank" rel="noopener">Audit Trail ↗</a>
+</div>
+</article>
+<article class="card rv" style="--d:2">
+<h3>NusaMart — BI Dashboard with Automated Python Testing</h3>
+<p class="mini">Retail dashboard whose KPI aggregations are checked by assertion-based Python tests, so nobody reconciles totals by hand.</p>
+<div style="margin-top:14px"><span class="chip">Python</span><span class="chip">Plotly</span><span class="chip">Automated Assertions</span><span class="chip">HTML</span></div>
+<div class="acts">
+  <a class="btn p" href="https://github.com/NusaibahF-IT/portofolio.git" target="_blank" rel="noopener">View BI Dashboard ↗</a>
+</div>
+</article>
+</div>
+
+<div class="pipe rv" style="margin-top:96px" id="pipe">
+<h2>Five formats in. One table that passes every check.</h2>
+<p class="lead">How the NusaMart pipeline treats each source before a single chart is drawn.</p>
+<div class="lane">
+<div class="srcs"><span class="src" style="--i:0">orders.csv</span><span class="src" style="--i:1">events.json</span><span class="src" style="--i:2">budget.xlsx</span><span class="src" style="--i:3">stores.sqlite</span><span class="src" style="--i:4">sales.parquet</span></div>
+<div class="arrow"></div>
+<div class="out"><div>Grain check <i>pass</i></div><div>PK/FK integrity <i>pass</i></div><div>PII masked <i>pass</i></div><div>Rerun, no code edits <i>pass</i></div></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="experience" style="padding-top:32px">
+<div class="wrap two">
+<div class="card exp rv" style="background:var(--sun);color:var(--ink);box-shadow:none">
+<span class="sticker m tiny">Experience</span>
+<h3 style="margin-top:14px">Computer Operator Assistant Intern</h3>
+<p style="margin-top:4px;font-weight:700">Statistics Indonesia (BPS) Kabupaten Kepulauan Seribu</p>
+<span style="font-size:12px;opacity:.8;display:block;margin-top:2px">Dec 2025 – Jun 2026</span>
+<ul><li>Managed official statistical publications.</li><li>Built SIMPONI, a web-based budget monitoring system on MySQL.</li><li>Designed data-driven infographics for public reporting.</li></ul>
+<svg class="m2" viewBox="0 0 100 100"><circle cx="50" cy="55" r="36" fill="#3FDF9F"/><circle cx="38" cy="50" r="4" fill="#21281B"/><circle cx="62" cy="50" r="4" fill="#21281B"/><path d="M40 66Q50 72 60 66" stroke="#21281B" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M36 22Q42 6 50 20Q58 6 64 22" stroke="#21281B" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+</div>
+<div id="skills" class="sk">
+<h2 class="rv"><span class="dot"></span>Skills</h2>
+<div class="rv"><h3>Programming &amp; Databases</h3><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">DuckDB</span><span class="chip">MySQL</span><span class="chip">SQLite</span></div>
+<div class="rv y"><h3>Python &amp; Data Analysis</h3><span class="chip">pandas</span><span class="chip">NumPy</span><span class="chip">Data Profiling</span><span class="chip">Wrangling</span><span class="chip">Multi-Source Integration</span></div>
+<div class="rv"><h3>Data Quality &amp; Governance</h3><span class="chip">Grain Check</span><span class="chip">PK/FK Integrity</span><span class="chip">PII Anonymization</span><span class="chip">Cleaning Rulebooks</span></div>
+<div class="rv"><h3>Visualization &amp; Frontend</h3><span class="chip">Plotly/HTML Dashboards</span><span class="chip">Data Storytelling</span><span class="chip">Basic React</span><span class="chip">HTML/CSS</span><span class="chip">Figma</span></div>
+<div class="rv"><h3>Tools</h3><span class="chip">Jupyter Notebook</span><span class="chip">VS Code</span><span class="chip">Git</span><span class="chip">Excel</span><span class="chip">Linux (Ubuntu)</span></div>
+</div>
+</div>
+</section>
+
+<section id="education" style="padding-top:32px">
+<div class="wrap">
+<h2 class="rv" style="text-align:center"><span class="dot"></span>Education &amp; certifications</h2>
+<div class="edu">
+<div class="card big rv"><b>3.79 / 4.00</b><p style="margin-top:12px;font-weight:700">B.Eng. in Telecommunication Systems</p><p>Universitas Pendidikan Indonesia (2021 – 2025)</p><p style="font-size:12px;opacity:.75;margin-top:6px">Published in Eduvest Journal: IoT Smart Door Double Security</p></div>
+<div class="card cert rv" style="--d:1">
+<div><b>Data Analyst with AI</b><span>Ioda Academy x Plan Indonesia (2026)</span></div>
+<div><b>Asisten Pengembangan Web</b><span>BNSP Sertifikat Kompetensi (2026–2029)</span></div>
+<div><b>Meta Front-End Developer</b><span>Meta, Coursera Professional Certificate (2024)</span></div>
+<div><b>Computer Operator Assistant</b><span>Maganghub Certificate — BPS Kab. Kepulauan Seribu (2026)</span></div>
+</div>
+</div>
+</div>
+</section>
+
+<section id="contact" class="contact" style="margin-top:48px">
+<div class="wrap">
+<svg class="mascot m3" style="position:static" viewBox="0 0 100 100"><ellipse cx="50" cy="60" rx="34" ry="32" fill="#F8C33A"/><circle cx="50" cy="30" r="10" fill="#F8C33A"/><circle cx="38" cy="56" r="4" fill="#21281B"/><circle cx="62" cy="56" r="4" fill="#21281B"/><path d="M42 70Q50 77 58 70" stroke="#21281B" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+<h2 class="rv">Interested in discussing a data opportunity or collaborating?</h2>
+<p class="rv" style="--d:1">Purwakarta, West Java, Indonesia</p>
+<div class="cta rv" style="--d:2">
+<a class="btn p" href="mailto:nusaibahfath@gmail.com">Send Email (nusaibahfath@gmail.com)</a>
+<a class="btn o" href="https://www.linkedin.com/in/nusaibahfathulj" target="_blank" rel="noopener">LinkedIn Profile ↗</a>
+<a class="btn w" href="https://wa.me/6287816245491" target="_blank" rel="noopener" style="font-size:13px;padding:8px 18px">WhatsApp (+62 878-1624-5491) ↗</a>
+</div>
+</div>
+</section>
+</main>
+<footer>
+  <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;border-top:1px solid rgba(33,40,27,.1);padding-top:20px">
+    <span>© 2026 Nusaibah Fathul Jannah. All rights reserved.</span>
+    <div>
+      <a href="https://github.com/NusaibahF-IT/portofolio.git" target="_blank" rel="noopener" style="font-weight:700;text-decoration:underline;margin-right:16px">GitHub Repository ↗</a>
+      <a href="public/cv_nusaibah.pdf" target="_blank" style="font-weight:700;text-decoration:underline">Curriculum Vitae (PDF)</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Interactive Case Study Modal Pop-up -->
+<div id="caseStudyModal" class="modal-overlay" onclick="closeModalOnBackdrop(event)">
+  <div class="modal-box">
+    <button class="close-btn" onclick="closeModal()" aria-label="Close modal">✕</button>
+    <span class="sticker tiny" style="margin-bottom:8px">Executive Case Study</span>
+    <h2 style="margin-top:8px">SwiftBite: Q1 2026 Performance &amp; Delivery SLA Audit</h2>
+    <p style="font-size:13px;opacity:.75;margin-top:4px">End-to-End Analytics on Financial Health, Logistics SLA, and Customer Sentiment</p>
+    <hr style="border:0;border-top:1px solid var(--line);margin:16px 0">
+    <div style="display:grid;gap:14px;font-size:13px;line-height:1.6">
+      <div>
+        <h3 style="font-size:15px;margin-bottom:6px"><span class="dot"></span>1. Business Context &amp; Objective</h3>
+        <p>SwiftBite operates as an on-demand food delivery platform connecting 30 merchants across 5 city zones. In Q1 2026, the platform registered <strong>320 unique transactions</strong> representing <strong>IDR 41.57M GMV</strong> (Net Payment: IDR 38.03M). Objective: evaluate financial viability, identify courier delivery bottlenecks, and assess customer sentiment to derive actionable Q2 2026 recommendations.</p>
+      </div>
+      <div>
+        <h3 style="font-size:15px;margin-bottom:6px"><span class="dot" style="background:var(--sun)"></span>2. Pipeline Architecture &amp; Data Integrity</h3>
+        <div style="background:var(--bg);padding:12px;border-radius:10px;font-family:'JetBrains Mono',monospace;font-size:12px;border:1px solid var(--line)">
+          <div>• Primary Source: <span style="color:var(--act);font-weight:700">swiftbite_pm2_integrated_order_level.csv</span> (320 rows)</div>
+          <div>• Review Source: <span style="color:var(--act);font-weight:700">swiftbite_reviews.csv</span> (190 reviews, 59.38% coverage)</div>
+          <div>• Relational Grain: <strong>100% matched on order_id</strong> (0 row duplication, zero PII leakage)</div>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size:15px;margin-bottom:6px"><span class="dot" style="background:var(--mag)"></span>3. Three Critical Business Findings</h3>
+        <ul style="padding-left:18px;display:grid;gap:8px;margin:0">
+          <li><strong>Loyal Segment Dominance (BQ-01):</strong> Loyal customers contributed <strong>27.55% of Net Payment (IDR 10.47M)</strong> across 83 orders with highest AOV (IDR 126,229/order). Protecting retention is vital (&gt;IDR 1M/month risk if retention drops 10%).</li>
+          <li><strong>Fast Food Bottleneck (BQ-02):</strong> Fast Food delivery delay rate reached <strong>39.58%</strong> (overall platform: 28.47%) with extreme delay peaking at <strong>55 minutes</strong> on order O00176.</li>
+          <li><strong>Delivery Delays Trigger Negative Reviews (BQ-03):</strong> 30% of Fast Food reviews were negative, primarily citing cold food and spilled packaging resulting from transit delay.</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="font-size:15px;margin-bottom:6px"><span class="dot" style="background:var(--field)"></span>4. Strategic Recommendations &amp; Q2 2026 KPI Targets</h3>
+        <ol style="padding-left:18px;display:grid;gap:6px;margin:0">
+          <li><strong>VIP Priority Auto-Dispatch:</strong> Dispatch couriers rating &gt;=4.8 for Loyal customers & auto-voucher if delay &gt;15 min. (Target: Loyal retention &gt;=95%, Net Revenue &gt;=IDR 12M).</li>
+          <li><strong>Fast Food Radius Limit &amp; Staging:</strong> Restrict radius to max 5 km and courier pool in busy restaurant clusters. (Target: Cut late delivery to &lt;20%).</li>
+          <li><strong>Mandatory Insulated Thermal Bags:</strong> Enforce thermal bags for couriers & tamper-proof seals for merchants. (Target: Negative reviews &lt;12%).</li>
+        </ol>
+      </div>
+    </div>
+    <div style="margin-top:24px;padding-top:16px;border-top:1px solid var(--line);display:flex;justify-content:flex-end;gap:10px">
+      <a class="btn p" href="public/SwiftBite_Dashboard_Final.html" target="_blank" rel="noopener">Open Live Dashboard ↗</a>
+      <button class="btn o" onclick="closeModal()">Close</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+var h=document.getElementById('hd');
+function s(){h.classList.toggle('s',window.scrollY>40)}
+s();addEventListener('scroll',s,{passive:true});
+var els=document.querySelectorAll('.rv');
+if(!('IntersectionObserver' in window)){els.forEach(function(e){e.classList.add('in')});document.getElementById('pipe').classList.add('go');return}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');if(e.target.id==='pipe')e.target.classList.add('go');io.unobserve(e.target)}})},{threshold:.2});
+els.forEach(function(e){io.observe(e)});
+
+// Theme toggle
+var tb=document.getElementById('themeToggle');
+var cur=localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light');
+document.documentElement.setAttribute('data-theme',cur);
+tb.textContent=cur==='dark'?'☀️':'🌙';
+tb.onclick=function(){
+  var n=document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark';
+  document.documentElement.setAttribute('data-theme',n);
+  localStorage.setItem('theme',n);
+  tb.textContent=n==='dark'?'☀️':'🌙';
+};
+})();
+
+// Modal logic
+function openModal(){document.getElementById('caseStudyModal').classList.add('open')}
+function closeModal(){document.getElementById('caseStudyModal').classList.remove('open')}
+function closeModalOnBackdrop(e){if(e.target.id==='caseStudyModal')closeModal()}
+document.addEventListener('keydown',function(e){if(e.key==='Escape')closeModal()});
+</script>
+</body>
+</html>

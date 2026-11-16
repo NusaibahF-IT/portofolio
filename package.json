@@ -1,0 +1,20 @@
+{
+  "name": "nusaibah-portfolio",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Personal Data Analyst Portfolio Website of Nusaibah Fathul Jannah built with Nuxt 3 & Tailwind CSS",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/tailwindcss": "^6.12.1",
+    "nuxt": "^3.13.2",
+    "vue": "^3.5.10",
+    "vue-router": "^4.4.5"
+  }
+}
