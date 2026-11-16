@@ -2,12 +2,22 @@
   <section id="experience" class="pt-8">
     <div class="wrap two grid gap-12 grid-cols-1 md:grid-cols-12 items-start">
       <!-- Experience Card (5 cols) -->
-      <div class="card exp md:col-span-5 bg-sun text-ink shadow-none relative p-6 rounded-bento">
-        <span class="sticker m tiny">Experience</span>
-        <h3 class="mt-3.5 font-extrabold text-lg text-ink">Computer Operator Assistant Intern</h3>
-        <p class="mt-1 font-bold text-sm text-ink/90">Badan Pusat Statistik (BPS) Kabupaten Kepulauan Seribu</p>
-        <span class="text-xs text-ink/75 block mt-0.5">Dec 2025 – Jun 2026</span>
-        <ul class="pl-4 mt-3.5 grid gap-2.5 text-xs list-disc text-ink">
+      <div class="card exp md:col-span-5 bg-card text-tx border border-line shadow-soft relative p-6 md:p-7 rounded-bento">
+        <div class="flex items-center justify-between gap-3">
+          <span class="sticker tiny">Experience</span>
+          <span class="text-xs font-bold px-3 py-1 rounded-full bg-sun/20 text-tx border border-sun/40">
+            Dec 2025 – Jun 2026
+          </span>
+        </div>
+
+        <h3 class="mt-4 font-extrabold text-lg md:text-xl text-tx leading-snug">
+          Computer Operator Assistant Intern
+        </h3>
+        <p class="mt-1 font-bold text-sm text-tx/90">
+          Badan Pusat Statistik (BPS) Kabupaten Kepulauan Seribu
+        </p>
+
+        <ul class="pl-4 mt-4 grid gap-2.5 text-xs list-disc text-tx/85 leading-relaxed">
           <li>Prepared, organized, and managed statistical data to support institutional publications and reporting, including statistical news releases and regional statistical reports.</li>
           <li>Developed <strong>SIMPONI</strong>, a web-based budget and honorarium monitoring system, integrating structured data management using MySQL.</li>
           <li>Designed data monitoring features to support budget tracking, reporting, and information accessibility.</li>
@@ -16,7 +26,7 @@
         </ul>
 
         <!-- Mascot 2 SVG -->
-        <svg class="m2 absolute right-[-10px] bottom-[-34px] w-[84px] rotate-6" viewBox="0 0 100 100">
+        <svg class="m2 absolute right-[-10px] bottom-[-34px] w-[84px] rotate-6 pointer-events-none" viewBox="0 0 100 100">
           <circle cx="50" cy="55" r="36" fill="#3FDF9F"/>
           <circle cx="38" cy="50" r="4" fill="#21281B"/>
           <circle cx="62" cy="50" r="4" fill="#21281B"/>
@@ -52,11 +62,11 @@
         <div class="y">
           <h3 class="text-sm font-extrabold text-tx mb-2">Python Libraries &amp; Data Analysis</h3>
           <div class="flex flex-wrap">
-            <span class="chip bg-sun text-ink border-ink">pandas</span>
-            <span class="chip bg-sun text-ink border-ink">NumPy</span>
-            <span class="chip bg-sun text-ink border-ink">Data Profiling</span>
-            <span class="chip bg-sun text-ink border-ink">Data Cleaning &amp; Wrangling</span>
-            <span class="chip bg-sun text-ink border-ink">Multi-source Data Integration</span>
+            <span class="chip bg-sun/20 text-tx border-sun/50 font-bold">pandas</span>
+            <span class="chip bg-sun/20 text-tx border-sun/50 font-bold">NumPy</span>
+            <span class="chip bg-sun/20 text-tx border-sun/50 font-bold">Data Profiling</span>
+            <span class="chip bg-sun/20 text-tx border-sun/50 font-bold">Data Cleaning &amp; Wrangling</span>
+            <span class="chip bg-sun/20 text-tx border-sun/50 font-bold">Multi-source Data Integration</span>
           </div>
         </div>
 

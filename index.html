@@ -90,10 +90,10 @@ header.s{box-shadow:0 4px 18px rgba(33,40,27,.1)}
 /* projects bento */
 .bento{display:grid;gap:24px;margin-top:48px;grid-template-columns:1fr}
 @media(min-width:900px){.bento{grid-template-columns:7fr 5fr}.flag{grid-row:span 2}}
-.card{background:var(--card);border-radius:16px;padding:24px;box-shadow:var(--sh);position:relative}
+.card{background:var(--card);color:var(--tx);border-radius:16px;padding:24px;box-shadow:var(--sh);position:relative;border:1px solid var(--line)}
 .flag{background:var(--mag);color:var(--ink);box-shadow:none;padding:28px}
 .flag .chip{background:rgba(251,252,252,.9);color:var(--ink)}
-.chip{display:inline-block;font-size:11px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:3px 10px;margin:0 6px 6px 0}
+.chip{display:inline-block;font-size:11px;font-weight:700;border:1px solid var(--line);border-radius:999px;padding:3px 10px;margin:0 6px 6px 0;background:var(--card);color:var(--tx)}
 .flag ul{padding-left:18px;margin:16px 0;display:grid;gap:10px;font-size:13px}
 .flag h3{font-size:22px}
 .acts{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
@@ -123,19 +123,21 @@ header.s{box-shadow:0 4px 18px rgba(33,40,27,.1)}
 @media(min-width:900px){.two{grid-template-columns:5fr 7fr;align-items:start}}
 .exp{position:relative}
 .exp .m2{position:absolute;right:-10px;bottom:-34px;width:84px;rotate:6deg}
-.exp ul{padding-left:18px;margin:14px 0 0;display:grid;gap:10px}
+.exp ul{padding-left:18px;margin:14px 0 0;display:grid;gap:10px;font-size:13px;line-height:1.55}
 .sk{display:grid;gap:20px}
 .sk h3{font-size:13px;margin-bottom:6px;display:flex;align-items:center}
 .sk .chip{background:var(--card);font-weight:500}
-.sk .y .chip{background:var(--sun);color:var(--ink);border-color:var(--ink)}
+.sk .y .chip{background:rgba(248,195,58,.2);color:var(--tx);border-color:rgba(248,195,58,.5);font-weight:700}
+.badge-pill{font-size:11px;font-weight:700;padding:3px 10px;border-radius:999px;border:1px solid var(--line);background:rgba(248,195,58,.18);color:var(--tx)}
+.badge-act{background:rgba(0,210,106,.15);border-color:rgba(0,210,106,.4)}
 .edu{display:grid;gap:24px;grid-template-columns:1fr;margin-top:40px}
 @media(min-width:900px){.edu{grid-template-columns:6fr 6fr}}
-.edu .big{background:var(--sun);color:var(--ink);box-shadow:none}
-.edu .big b{font-size:44px;font-weight:900;letter-spacing:-.03em;display:block;line-height:1}
+.edu .big b{font-size:40px;font-weight:900;letter-spacing:-.03em;display:block;line-height:1.1;color:var(--tx)}
 .cert{display:grid;gap:14px}
 .cert div{padding-bottom:14px;border-bottom:1px solid var(--line)}
 .cert div:last-child{border:0;padding:0}
 .cert span{font-size:12px;opacity:.75;display:block}
+.thesis-box{background:var(--bg);padding:14px;border-radius:12px;border:1px solid var(--line);margin-top:14px;font-size:12px;line-height:1.55}
 /* contact */
 .contact{background:var(--field);color:var(--ink);border-radius:80px 80px 0 0;padding:80px 0 56px}
 .contact .wrap{text-align:center}
@@ -251,19 +253,21 @@ footer{background:var(--field);color:var(--ink);text-align:center;font-size:12px
 
 <section id="experience" style="padding-top:32px">
 <div class="wrap two">
-<div class="card exp rv" style="background:var(--sun);color:var(--ink);box-shadow:none">
-<span class="sticker m tiny">Experience</span>
-<h3 style="margin-top:14px">Computer Operator Assistant Intern</h3>
-<p style="margin-top:4px;font-weight:700">Badan Pusat Statistik (BPS) Kabupaten Kepulauan Seribu</p>
-<span style="font-size:12px;opacity:.8;display:block;margin-top:2px">Dec 2025 – Jun 2026</span>
-<ul>
-  <li>Prepared, organized, and managed statistical data to support institutional publications and reporting, including statistical news releases and regional statistical reports.</li>
-  <li>Developed <strong>SIMPONI</strong>, a web-based budget and honorarium monitoring system, integrating structured data management using MySQL.</li>
-  <li>Designed data monitoring features to support budget tracking, reporting, and information accessibility.</li>
-  <li>Created data-driven infographics to communicate statistical findings through institutional publications.</li>
-  <li>Supported IT operations, computer systems, and technical troubleshooting to maintain institutional workflows.</li>
-</ul>
-<svg class="m2" viewBox="0 0 100 100"><circle cx="50" cy="55" r="36" fill="#3FDF9F"/><circle cx="38" cy="50" r="4" fill="#21281B"/><circle cx="62" cy="50" r="4" fill="#21281B"/><path d="M40 66Q50 72 60 66" stroke="#21281B" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M36 22Q42 6 50 20Q58 6 64 22" stroke="#21281B" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+<div class="card exp rv">
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:12px">
+    <span class="sticker tiny">Experience</span>
+    <span class="badge-pill">Dec 2025 – Jun 2026</span>
+  </div>
+  <h3 style="margin-top:16px;font-size:19px">Computer Operator Assistant Intern</h3>
+  <p style="margin-top:4px;font-weight:700">Badan Pusat Statistik (BPS) Kabupaten Kepulauan Seribu</p>
+  <ul>
+    <li>Prepared, organized, and managed statistical data to support institutional publications and reporting, including statistical news releases and regional statistical reports.</li>
+    <li>Developed <strong>SIMPONI</strong>, a web-based budget and honorarium monitoring system, integrating structured data management using MySQL.</li>
+    <li>Designed data monitoring features to support budget tracking, reporting, and information accessibility.</li>
+    <li>Created data-driven infographics to communicate statistical findings through institutional publications.</li>
+    <li>Supported IT operations, computer systems, and technical troubleshooting to maintain institutional workflows.</li>
+  </ul>
+  <svg class="m2" viewBox="0 0 100 100"><circle cx="50" cy="55" r="36" fill="#3FDF9F"/><circle cx="38" cy="50" r="4" fill="#21281B"/><circle cx="62" cy="50" r="4" fill="#21281B"/><path d="M40 66Q50 72 60 66" stroke="#21281B" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M36 22Q42 6 50 20Q58 6 64 22" stroke="#21281B" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
 </div>
 
 <div id="skills" class="sk">
@@ -283,18 +287,24 @@ footer{background:var(--field);color:var(--ink);text-align:center;font-size:12px
 <h2 class="rv" style="text-align:center"><span class="dot"></span>Education &amp; Certifications</h2>
 <div class="edu">
 <div class="card big rv">
-  <span class="tiny" style="opacity:.7;display:block;margin-bottom:6px">Bachelor Degree</span>
+  <div style="display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:8px">
+    <span class="sticker tiny">Education</span>
+    <span class="badge-pill badge-act">Aug 2021 – Jan 2025</span>
+  </div>
+  <span class="tiny" style="opacity:.7;display:block;margin-top:8px">Academic Achievement</span>
   <b>GPA 3.79 / 4.00</b>
-  <p style="margin-top:12px;font-weight:700">Bachelor of Telecommunication Systems</p>
-  <p style="font-weight:600">Universitas Pendidikan Indonesia</p>
-  <span style="font-size:12px;opacity:.75;display:block;margin-top:2px">Aug 2021 – Jan 2025</span>
-  <p style="font-size:12px;opacity:.85;margin-top:12px;padding-top:10px;border-top:1px solid rgba(33,40,27,.15);line-height:1.5">
+  <p style="margin-top:10px;font-weight:800;font-size:16px">Bachelor of Telecommunication Systems</p>
+  <p style="font-weight:600;opacity:.9">Universitas Pendidikan Indonesia</p>
+  <div class="thesis-box">
     <strong>Thesis:</strong> IoT Based Smart Door Selector for Double Security: Integration of RFID and Blynk App for an Economical Solution<br>
-    (published in <em>Eduvest Journal, 2025</em>, <a href="https://doi.org/10.59188/eduvest.v4i10.39011" target="_blank" rel="noopener" style="text-decoration:underline;font-weight:700">https://doi.org/10.59188/eduvest.v4i10.39011 ↗</a>)
-  </p>
+    <span style="display:block;margin-top:6px">published in <em>Eduvest Journal, 2025</em>, <a href="https://doi.org/10.59188/eduvest.v4i10.39011" target="_blank" rel="noopener" style="color:var(--act);text-decoration:underline;font-weight:700">https://doi.org/10.59188/eduvest.v4i10.39011 ↗</a></span>
+  </div>
 </div>
 <div class="card cert rv" style="--d:1">
-  <span class="tiny" style="opacity:.7;display:block;margin-bottom:8px">Certifications</span>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:6px">
+    <span class="sticker tiny">Certifications</span>
+    <span style="font-size:12px;opacity:.7">4 Official Credentials</span>
+  </div>
   <div><b>Bootcamp Data Analyst With AI</b><span>Ioda Academy X Plan Indonesia (2026)</span></div>
   <div><b>Asisten Pengembangan Web</b><span>BNSP Sertifikat Kompetensi (2026-2029)</span></div>
   <div><b>Maganghub Certificate Computer Operator Assistant</b><span>BPS Kabupaten Kepulauan Seribu (2026)</span></div>
