@@ -5,12 +5,14 @@
       <div class="card exp md:col-span-5 bg-sun text-ink shadow-none relative p-6 rounded-bento">
         <span class="sticker m tiny">Experience</span>
         <h3 class="mt-3.5 font-extrabold text-lg text-ink">Computer Operator Assistant Intern</h3>
-        <p class="mt-1 font-bold text-sm text-ink/90">Statistics Indonesia (BPS) Kabupaten Kepulauan Seribu</p>
+        <p class="mt-1 font-bold text-sm text-ink/90">Badan Pusat Statistik (BPS) Kabupaten Kepulauan Seribu</p>
         <span class="text-xs text-ink/75 block mt-0.5">Dec 2025 – Jun 2026</span>
-        <ul class="pl-4 mt-3.5 grid gap-2 text-xs list-disc text-ink">
-          <li>Prepared, organized, and managed statistical data to support official institutional publications and reporting.</li>
-          <li>Developed <strong>SIMPONI</strong>, a web-based budget and honorarium monitoring system utilizing MySQL.</li>
-          <li>Designed data monitoring features and data-driven infographics for regional statistical reporting.</li>
+        <ul class="pl-4 mt-3.5 grid gap-2.5 text-xs list-disc text-ink">
+          <li>Prepared, organized, and managed statistical data to support institutional publications and reporting, including statistical news releases and regional statistical reports.</li>
+          <li>Developed <strong>SIMPONI</strong>, a web-based budget and honorarium monitoring system, integrating structured data management using MySQL.</li>
+          <li>Designed data monitoring features to support budget tracking, reporting, and information accessibility.</li>
+          <li>Created data-driven infographics to communicate statistical findings through institutional publications.</li>
+          <li>Supported IT operations, computer systems, and technical troubleshooting to maintain institutional workflows.</li>
         </ul>
 
         <!-- Mascot 2 SVG -->
@@ -31,24 +33,30 @@
         </h2>
 
         <div>
-          <h3 class="text-sm font-extrabold text-tx mb-2">Programming &amp; Databases</h3>
+          <h3 class="text-sm font-extrabold text-tx mb-2">Programming &amp; Query</h3>
           <div class="flex flex-wrap">
             <span class="chip">Python</span>
             <span class="chip">SQL</span>
-            <span class="chip">DuckDB</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="text-sm font-extrabold text-tx mb-2">Databases</h3>
+          <div class="flex flex-wrap">
             <span class="chip">MySQL</span>
             <span class="chip">SQLite</span>
+            <span class="chip">DuckDB</span>
           </div>
         </div>
 
         <div class="y">
-          <h3 class="text-sm font-extrabold text-tx mb-2">Python &amp; Data Analysis</h3>
+          <h3 class="text-sm font-extrabold text-tx mb-2">Python Libraries &amp; Data Analysis</h3>
           <div class="flex flex-wrap">
             <span class="chip bg-sun text-ink border-ink">pandas</span>
             <span class="chip bg-sun text-ink border-ink">NumPy</span>
             <span class="chip bg-sun text-ink border-ink">Data Profiling</span>
-            <span class="chip bg-sun text-ink border-ink">Wrangling</span>
-            <span class="chip bg-sun text-ink border-ink">Multi-Source Integration</span>
+            <span class="chip bg-sun text-ink border-ink">Data Cleaning &amp; Wrangling</span>
+            <span class="chip bg-sun text-ink border-ink">Multi-source Data Integration</span>
           </div>
         </div>
 
@@ -56,31 +64,38 @@
           <h3 class="text-sm font-extrabold text-tx mb-2">Data Quality &amp; Governance</h3>
           <div class="flex flex-wrap">
             <span class="chip">Grain Check</span>
-            <span class="chip">PK/FK Integrity</span>
+            <span class="chip">Primary Key &amp; Foreign Key Integrity</span>
             <span class="chip">PII Anonymization</span>
-            <span class="chip">Cleaning Rulebooks</span>
+            <span class="chip">Cleaning Rulebook</span>
           </div>
         </div>
 
         <div>
-          <h3 class="text-sm font-extrabold text-tx mb-2">Visualization &amp; Frontend</h3>
+          <h3 class="text-sm font-extrabold text-tx mb-2">Data Visualization &amp; Web</h3>
           <div class="flex flex-wrap">
-            <span class="chip">Plotly/HTML Dashboards</span>
+            <span class="chip">Interactive Dashboards (Plotly/HTML)</span>
             <span class="chip">Data Storytelling</span>
-            <span class="chip">Basic React</span>
+            <span class="chip">Infographics</span>
             <span class="chip">HTML/CSS</span>
+            <span class="chip">JavaScript</span>
+            <span class="chip">Basic React</span>
+            <span class="chip">PHP</span>
             <span class="chip">Figma</span>
           </div>
         </div>
 
         <div>
-          <h3 class="text-sm font-extrabold text-tx mb-2">Tools &amp; Environment</h3>
+          <h3 class="text-sm font-extrabold text-tx mb-2">Tools &amp; Formats</h3>
           <div class="flex flex-wrap">
             <span class="chip">Jupyter Notebook</span>
-            <span class="chip">VS Code</span>
             <span class="chip">Git</span>
-            <span class="chip">Excel</span>
+            <span class="chip">Microsoft Office (Excel)</span>
             <span class="chip">Linux (Ubuntu)</span>
+            <span class="chip">VS Code</span>
+            <span class="chip">CSV</span>
+            <span class="chip">JSON</span>
+            <span class="chip">XLSX</span>
+            <span class="chip">Parquet</span>
           </div>
         </div>
       </div>

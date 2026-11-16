@@ -30,3 +30,4 @@ import { ref } from 'vue'
 
 const isCaseStudyOpen = ref(false)
 </script>
+

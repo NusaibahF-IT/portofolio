@@ -123,9 +123,9 @@ header.s{box-shadow:0 4px 18px rgba(33,40,27,.1)}
 @media(min-width:900px){.two{grid-template-columns:5fr 7fr;align-items:start}}
 .exp{position:relative}
 .exp .m2{position:absolute;right:-10px;bottom:-34px;width:84px;rotate:6deg}
-.exp ul{padding-left:18px;margin:14px 0 0;display:grid;gap:8px}
-.sk{display:grid;gap:22px}
-.sk h3{font-size:14px;margin-bottom:8px;display:flex;align-items:center}
+.exp ul{padding-left:18px;margin:14px 0 0;display:grid;gap:10px}
+.sk{display:grid;gap:20px}
+.sk h3{font-size:13px;margin-bottom:6px;display:flex;align-items:center}
 .sk .chip{background:var(--card);font-weight:500}
 .sk .y .chip{background:var(--sun);color:var(--ink);border-color:var(--ink)}
 .edu{display:grid;gap:24px;grid-template-columns:1fr;margin-top:40px}
@@ -202,7 +202,7 @@ footer{background:var(--field);color:var(--ink);text-align:center;font-size:12px
 <article class="card flag rv">
 <span class="sticker tiny">Flagship capstone</span>
 <h3>SwiftBite — Business Performance &amp; Operational Delivery Analytics</h3>
-<p class="mini" style="opacity:.9">Audit of an on-demand food delivery platform: 320 unique transactions and 190 customer reviews across 5 city zones.</p>
+<p class="mini" style="opacity:.9">Audit of an on-demand food delivery platform: 320 unique transactions and 190 customer reviews across 5 city zones (Q1 2026).</p>
 <ul>
 <li>The Loyal segment is the top revenue pillar: 27.55% of Net Payment (IDR 10.47M) and the highest average spend, IDR 126,229 per order.</li>
 <li>Fast Food is the bottleneck: 39.58% late deliveries against 28.47% overall, with delays up to 55 minutes.</li>
@@ -216,21 +216,23 @@ footer{background:var(--field);color:var(--ink);text-align:center;font-size:12px
   <a class="btn o" href="https://github.com/NusaibahF-IT/portofolio.git" target="_blank" rel="noopener">GitHub ↗</a>
 </div>
 </article>
+
 <article class="card rv" style="--d:1">
 <h3>NusaMart — Safe &amp; Reproducible Multi-Source ETL Pipeline</h3>
-<p class="mini">Automated pipeline integrating CSV, JSON, Excel, SQLite and Parquet. Enforces primary/foreign key reconciliation, masks names, emails and phones, and reruns across historical periods without code changes.</p>
+<p class="mini">Automated pipeline integrating CSV, JSON, Excel, SQLite and Parquet into a unified analytical dataset. Enforces primary/foreign key reconciliation, masks PII (names, emails, phones), and reruns across historical periods without code changes.</p>
 <div style="margin-top:14px"><span class="chip">Python</span><span class="chip">pandas</span><span class="chip">SQL/DuckDB</span><span class="chip">SQLite</span><span class="chip">Parquet</span><span class="chip">Data Quality</span></div>
 <div class="acts">
   <a class="btn p" href="#pipe">Pipeline Architecture ↗</a>
-  <a class="btn o" href="https://github.com/NusaibahF-IT/portofolio.git" target="_blank" rel="noopener">Audit Trail ↗</a>
+  <a class="btn o" href="public/NusaMart_Reusability_Audit_Report.html" target="_blank" rel="noopener">Audit Trail ↗</a>
 </div>
 </article>
+
 <article class="card rv" style="--d:2">
 <h3>NusaMart — BI Dashboard with Automated Python Testing</h3>
-<p class="mini">Retail dashboard whose KPI aggregations are checked by assertion-based Python tests, so nobody reconciles totals by hand.</p>
+<p class="mini">Interactive multi-metric e-commerce retail dashboard whose KPI aggregations are mathematically checked by assertion-based Python tests, eliminating manual reconciliation. Tested across 5+ filter scenarios.</p>
 <div style="margin-top:14px"><span class="chip">Python</span><span class="chip">Plotly</span><span class="chip">Automated Assertions</span><span class="chip">HTML</span></div>
 <div class="acts">
-  <a class="btn p" href="https://github.com/NusaibahF-IT/portofolio.git" target="_blank" rel="noopener">View BI Dashboard ↗</a>
+  <a class="btn p" href="public/NusaMart_Dashboard_Final.html" target="_blank" rel="noopener">View BI Dashboard ↗</a>
 </div>
 </article>
 </div>
@@ -252,32 +254,51 @@ footer{background:var(--field);color:var(--ink);text-align:center;font-size:12px
 <div class="card exp rv" style="background:var(--sun);color:var(--ink);box-shadow:none">
 <span class="sticker m tiny">Experience</span>
 <h3 style="margin-top:14px">Computer Operator Assistant Intern</h3>
-<p style="margin-top:4px;font-weight:700">Statistics Indonesia (BPS) Kabupaten Kepulauan Seribu</p>
+<p style="margin-top:4px;font-weight:700">Badan Pusat Statistik (BPS) Kabupaten Kepulauan Seribu</p>
 <span style="font-size:12px;opacity:.8;display:block;margin-top:2px">Dec 2025 – Jun 2026</span>
-<ul><li>Managed official statistical publications.</li><li>Built SIMPONI, a web-based budget monitoring system on MySQL.</li><li>Designed data-driven infographics for public reporting.</li></ul>
+<ul>
+  <li>Prepared, organized, and managed statistical data to support institutional publications and reporting, including statistical news releases and regional statistical reports.</li>
+  <li>Developed <strong>SIMPONI</strong>, a web-based budget and honorarium monitoring system, integrating structured data management using MySQL.</li>
+  <li>Designed data monitoring features to support budget tracking, reporting, and information accessibility.</li>
+  <li>Created data-driven infographics to communicate statistical findings through institutional publications.</li>
+  <li>Supported IT operations, computer systems, and technical troubleshooting to maintain institutional workflows.</li>
+</ul>
 <svg class="m2" viewBox="0 0 100 100"><circle cx="50" cy="55" r="36" fill="#3FDF9F"/><circle cx="38" cy="50" r="4" fill="#21281B"/><circle cx="62" cy="50" r="4" fill="#21281B"/><path d="M40 66Q50 72 60 66" stroke="#21281B" stroke-width="3" fill="none" stroke-linecap="round"/><path d="M36 22Q42 6 50 20Q58 6 64 22" stroke="#21281B" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
 </div>
+
 <div id="skills" class="sk">
 <h2 class="rv"><span class="dot"></span>Skills</h2>
-<div class="rv"><h3>Programming &amp; Databases</h3><span class="chip">Python</span><span class="chip">SQL</span><span class="chip">DuckDB</span><span class="chip">MySQL</span><span class="chip">SQLite</span></div>
-<div class="rv y"><h3>Python &amp; Data Analysis</h3><span class="chip">pandas</span><span class="chip">NumPy</span><span class="chip">Data Profiling</span><span class="chip">Wrangling</span><span class="chip">Multi-Source Integration</span></div>
-<div class="rv"><h3>Data Quality &amp; Governance</h3><span class="chip">Grain Check</span><span class="chip">PK/FK Integrity</span><span class="chip">PII Anonymization</span><span class="chip">Cleaning Rulebooks</span></div>
-<div class="rv"><h3>Visualization &amp; Frontend</h3><span class="chip">Plotly/HTML Dashboards</span><span class="chip">Data Storytelling</span><span class="chip">Basic React</span><span class="chip">HTML/CSS</span><span class="chip">Figma</span></div>
-<div class="rv"><h3>Tools</h3><span class="chip">Jupyter Notebook</span><span class="chip">VS Code</span><span class="chip">Git</span><span class="chip">Excel</span><span class="chip">Linux (Ubuntu)</span></div>
+<div class="rv"><h3>Programming &amp; Query</h3><span class="chip">Python</span><span class="chip">SQL</span></div>
+<div class="rv"><h3>Databases</h3><span class="chip">MySQL</span><span class="chip">SQLite</span><span class="chip">DuckDB</span></div>
+<div class="rv y"><h3>Python Libraries &amp; Data Analysis</h3><span class="chip">pandas</span><span class="chip">NumPy</span><span class="chip">Data Profiling</span><span class="chip">Data Cleaning &amp; Wrangling</span><span class="chip">Multi-source Data Integration</span></div>
+<div class="rv"><h3>Data Quality &amp; Governance</h3><span class="chip">Grain Check</span><span class="chip">Primary Key &amp; Foreign Key Integrity</span><span class="chip">PII Anonymization</span><span class="chip">Cleaning Rulebook</span></div>
+<div class="rv"><h3>Data Visualization &amp; Web</h3><span class="chip">Interactive Dashboards (Plotly/HTML)</span><span class="chip">Data Storytelling</span><span class="chip">Infographics</span><span class="chip">HTML/CSS</span><span class="chip">JavaScript</span><span class="chip">Basic React</span><span class="chip">PHP</span><span class="chip">Figma</span></div>
+<div class="rv"><h3>Tools &amp; Formats</h3><span class="chip">Jupyter Notebook</span><span class="chip">Git</span><span class="chip">Microsoft Office (Excel)</span><span class="chip">Linux (Ubuntu)</span><span class="chip">VS Code</span><span class="chip">CSV</span><span class="chip">JSON</span><span class="chip">XLSX</span><span class="chip">Parquet</span></div>
 </div>
 </div>
 </section>
 
 <section id="education" style="padding-top:32px">
 <div class="wrap">
-<h2 class="rv" style="text-align:center"><span class="dot"></span>Education &amp; certifications</h2>
+<h2 class="rv" style="text-align:center"><span class="dot"></span>Education &amp; Certifications</h2>
 <div class="edu">
-<div class="card big rv"><b>3.79 / 4.00</b><p style="margin-top:12px;font-weight:700">B.Eng. in Telecommunication Systems</p><p>Universitas Pendidikan Indonesia (2021 – 2025)</p><p style="font-size:12px;opacity:.75;margin-top:6px">Published in Eduvest Journal: IoT Smart Door Double Security</p></div>
+<div class="card big rv">
+  <span class="tiny" style="opacity:.7;display:block;margin-bottom:6px">Bachelor Degree</span>
+  <b>GPA 3.79 / 4.00</b>
+  <p style="margin-top:12px;font-weight:700">Bachelor of Telecommunication Systems</p>
+  <p style="font-weight:600">Universitas Pendidikan Indonesia</p>
+  <span style="font-size:12px;opacity:.75;display:block;margin-top:2px">Aug 2021 – Jan 2025</span>
+  <p style="font-size:12px;opacity:.85;margin-top:12px;padding-top:10px;border-top:1px solid rgba(33,40,27,.15);line-height:1.5">
+    <strong>Thesis:</strong> IoT Based Smart Door Selector for Double Security: Integration of RFID and Blynk App for an Economical Solution<br>
+    (published in <em>Eduvest Journal, 2025</em>, <a href="https://doi.org/10.59188/eduvest.v4i10.39011" target="_blank" rel="noopener" style="text-decoration:underline;font-weight:700">https://doi.org/10.59188/eduvest.v4i10.39011 ↗</a>)
+  </p>
+</div>
 <div class="card cert rv" style="--d:1">
-<div><b>Data Analyst with AI</b><span>Ioda Academy x Plan Indonesia (2026)</span></div>
-<div><b>Asisten Pengembangan Web</b><span>BNSP Sertifikat Kompetensi (2026–2029)</span></div>
-<div><b>Meta Front-End Developer</b><span>Meta, Coursera Professional Certificate (2024)</span></div>
-<div><b>Computer Operator Assistant</b><span>Maganghub Certificate — BPS Kab. Kepulauan Seribu (2026)</span></div>
+  <span class="tiny" style="opacity:.7;display:block;margin-bottom:8px">Certifications</span>
+  <div><b>Bootcamp Data Analyst With AI</b><span>Ioda Academy X Plan Indonesia (2026)</span></div>
+  <div><b>Asisten Pengembangan Web</b><span>BNSP Sertifikat Kompetensi (2026-2029)</span></div>
+  <div><b>Maganghub Certificate Computer Operator Assistant</b><span>BPS Kabupaten Kepulauan Seribu (2026)</span></div>
+  <div><b>Meta Front-End Developer</b><span>Meta, Coursera (2024)</span></div>
 </div>
 </div>
 </div>

@@ -80,7 +80,7 @@
             <a class="btn p" href="#pipe">
               Pipeline Architecture ↗
             </a>
-            <a class="btn o" href="https://github.com/NusaibahF-IT/portofolio.git" target="_blank" rel="noopener noreferrer">
+            <a class="btn o" href="/NusaMart_Reusability_Audit_Report.html" target="_blank" rel="noopener noreferrer">
               Audit Trail ↗
             </a>
           </div>
@@ -99,7 +99,7 @@
             <span class="chip">HTML</span>
           </div>
           <div class="acts flex gap-2.5 flex-wrap mt-4">
-            <a class="btn p" href="https://github.com/NusaibahF-IT/portofolio.git" target="_blank" rel="noopener noreferrer">
+            <a class="btn p" href="/NusaMart_Dashboard_Final.html" target="_blank" rel="noopener noreferrer">
               View BI Dashboard ↗
             </a>
           </div>
