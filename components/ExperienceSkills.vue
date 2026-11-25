@@ -83,6 +83,7 @@
         <div>
           <h3 class="text-sm font-extrabold text-tx mb-2">Data Visualization &amp; Web</h3>
           <div class="flex flex-wrap">
+            <span class="chip">Power BI (DAX)</span>
             <span class="chip">Interactive Dashboards (Plotly/HTML)</span>
             <span class="chip">Data Storytelling</span>
             <span class="chip">Infographics</span>

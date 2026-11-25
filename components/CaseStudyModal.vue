@@ -122,6 +122,14 @@
           >
             Open Live Interactive Dashboard ↗
           </a>
+          <a
+            class="btn o text-xs"
+            href="/Swiftbite_Dashboard.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Power BI Report (PDF) ↗
+          </a>
           <button class="btn o text-xs" @click="close">
             Close
           </button>

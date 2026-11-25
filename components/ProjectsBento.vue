@@ -5,10 +5,10 @@
       <div class="intro text-center">
         <h2 class="text-tx">
           <span class="inline-block w-2 h-2 rounded-full bg-act mr-2.5 align-middle"></span>
-          Three projects, each reconciled to the raw data
+          Four projects, each reconciled to the raw data
         </h2>
-        <p class="max-w-[380px] mx-auto mt-4 opacity-80 text-tx text-sm">
-          Every dashboard and pipeline below ships with checks that prove its totals.
+        <p class="max-w-[420px] mx-auto mt-4 opacity-80 text-tx text-sm">
+          Every dashboard, pipeline, and profiling tool below ships with automated checks that prove its integrity.
         </p>
       </div>
 
@@ -44,6 +44,8 @@
             <span class="chip">pandas</span>
             <span class="chip">DuckDB</span>
             <span class="chip">Plotly</span>
+            <span class="chip">Power BI</span>
+            <span class="chip">DAX</span>
             <span class="chip">HTML</span>
             <span class="chip">Data Pipeline</span>
           </div>
@@ -52,6 +54,9 @@
           <div class="acts flex gap-2.5 flex-wrap mt-5">
             <a class="btn p" href="/SwiftBite_Dashboard_Final.html" target="_blank" rel="noopener noreferrer">
               Live Dashboard ↗
+            </a>
+            <a class="btn o" href="/Swiftbite_Dashboard.pdf" target="_blank" rel="noopener noreferrer">
+              Power BI Report (PDF) ↗
             </a>
             <button class="btn o" @click="$emit('open-case-study')">
               Case Study Summary ↗
@@ -102,6 +107,42 @@
             <a class="btn p" href="/NusaMart_Dashboard_Final.html" target="_blank" rel="noopener noreferrer">
               View BI Dashboard ↗
             </a>
+          </div>
+        </article>
+
+        <!-- Project 4: Raw Data Profiler & PII Scanner Web App (12 cols) -->
+        <article class="card md:col-span-12 relative border border-line">
+          <span class="sticker tiny absolute right-4 top-[-14px]">Data Analyst Tool</span>
+          <div class="grid gap-5 md:grid-cols-12 md:items-center">
+            <div class="md:col-span-8">
+              <h3 class="text-lg md:text-xl font-extrabold text-tx">
+                Raw Data Profiler &amp; PII Scanner — Automated Data Readiness &amp; Governance App
+              </h3>
+              <p class="mini text-tx/85 text-[13px] mt-2.5 leading-relaxed">
+                Full-stack analytical utility built with <strong>FastAPI, DuckDB, pandas</strong>, and <strong>Nuxt 3</strong> implementing the <em>Detect → Measure → Verify</em> workflow across CSV, TSV/TXT, XLSX, nested JSON, Parquet, and SQLite. Automatically detects candidate primary keys, missing/placeholder values, numeric outliers, date chronology anomalies, and PII risks (Email, Phone, NIK, NPWP, Name, Address) with one-click SHA-256/partial/redacted masking verified by automated <span class="font-mono">VT-01–VT-03</span> gates.
+              </p>
+              <div class="mt-4 flex flex-wrap">
+                <span class="chip">FastAPI</span>
+                <span class="chip">Python</span>
+                <span class="chip">DuckDB</span>
+                <span class="chip">pandas</span>
+                <span class="chip">Nuxt 3</span>
+                <span class="chip">Tailwind CSS</span>
+                <span class="chip">PII Masking</span>
+                <span class="chip">Vercel Services</span>
+              </div>
+            </div>
+
+            <div class="md:col-span-4 flex md:flex-col gap-2.5 md:items-end justify-start">
+              <a
+                class="btn p"
+                href="https://github.com/NusaibahF-IT/Raw-Data-Profiler-PII-Scanner"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub Repository ↗
+              </a>
+            </div>
           </div>
         </article>
       </div>
