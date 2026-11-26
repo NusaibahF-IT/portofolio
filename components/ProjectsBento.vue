@@ -5,7 +5,7 @@
       <div class="intro text-center">
         <h2 class="text-tx">
           <span class="inline-block w-2 h-2 rounded-full bg-act mr-2.5 align-middle"></span>
-          Five projects, built &amp; reconciled to the raw data
+          Six projects, built &amp; reconciled to the raw data
         </h2>
         <p class="max-w-[440px] mx-auto mt-4 opacity-80 text-tx text-sm">
           Every dashboard, pipeline, and analytics tool below ships with automated checks that prove its integrity.
@@ -110,8 +110,8 @@
           </div>
         </article>
 
-        <!-- Project 4: Raw Data Profiler & PII Scanner Web App (6 cols) -->
-        <article class="card md:col-span-6 relative border border-line flex flex-col justify-between">
+        <!-- Project 4: Raw Data Profiler & PII Scanner Web App (4 cols) -->
+        <article class="card md:col-span-4 relative border border-line flex flex-col justify-between">
           <span class="sticker tiny absolute right-4 top-[-14px]">Data Analyst Tool 01</span>
           <div>
             <h3 class="text-lg font-extrabold text-tx">
@@ -150,8 +150,8 @@
           </div>
         </article>
 
-        <!-- Project 5: KPI Reconciler & Business Hypothesis Workbench (6 cols) -->
-        <article class="card md:col-span-6 relative border border-line flex flex-col justify-between">
+        <!-- Project 5: KPI Reconciler & Business Hypothesis Workbench (4 cols) -->
+        <article class="card md:col-span-4 relative border border-line flex flex-col justify-between">
           <span class="sticker tiny absolute right-4 top-[-14px]">Data Analyst Tool 02</span>
           <div>
             <h3 class="text-lg font-extrabold text-tx">
@@ -182,6 +182,46 @@
             <a
               class="btn o"
               href="https://github.com/NusaibahF-IT/KPI-Reconciler-Hypothesis-Workbench"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 6: Safe ETL, Cleaning & Multi-Source Join Workbench (4 cols) -->
+        <article class="card md:col-span-4 relative border border-line flex flex-col justify-between">
+          <span class="sticker tiny absolute right-4 top-[-14px]">Data Analyst Tool 03</span>
+          <div>
+            <h3 class="text-lg font-extrabold text-tx">
+              Safe ETL, Cleaning &amp; Multi-Source Join Workbench (ID / EN)
+            </h3>
+            <p class="mini text-tx/85 text-[13px] mt-2.5 leading-relaxed">
+              Multi-table preparation studio combining schema drift contract checks, rule-based data cleaning with Before/After reconciliation audits, and DuckDB PK/FK join explosion guards (<span class="font-mono">aggregate_by_key</span> &amp; orphan key detection) before exporting <span class="font-mono">analysis_ready.csv</span>.
+            </p>
+            <div class="mt-4 flex flex-wrap">
+              <span class="chip">FastAPI</span>
+              <span class="chip">DuckDB</span>
+              <span class="chip">Schema Drift</span>
+              <span class="chip">Cleaning Rulebook</span>
+              <span class="chip">PK/FK Join</span>
+              <span class="chip">Nuxt 3</span>
+            </div>
+          </div>
+
+          <div class="acts flex gap-2.5 flex-wrap mt-5">
+            <a
+              class="btn p"
+              href="https://safeetlcleaning.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live App ↗
+            </a>
+            <a
+              class="btn o"
+              href="https://github.com/NusaibahF-IT/Safe-ETL-Cleaning-Join-Workbench"
               target="_blank"
               rel="noopener noreferrer"
             >
