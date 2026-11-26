@@ -133,7 +133,7 @@
           <div class="acts flex gap-2.5 flex-wrap mt-5">
             <a
               class="btn p"
-              href="https://dataprofiler-okp3utop1-nusaibah-fathul-jannah.vercel.app"
+              href="https://dataprofiler-lovat.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -150,49 +150,9 @@
           </div>
         </article>
 
-        <!-- Project 5: KPI Reconciler & Business Hypothesis Workbench (4 cols) -->
+        <!-- Project 5: Safe ETL, Cleaning & Multi-Source Join Workbench (4 cols) -->
         <article class="card md:col-span-4 relative border border-line flex flex-col justify-between">
           <span class="sticker tiny absolute right-4 top-[-14px]">Data Analyst Tool 02</span>
-          <div>
-            <h3 class="text-lg font-extrabold text-tx">
-              KPI Reconciler &amp; Business Hypothesis Workbench (ID / EN)
-            </h3>
-            <p class="mini text-tx/85 text-[13px] mt-2.5 leading-relaxed">
-              Domain-agnostic analytical workbench pairing independent DuckDB KPI assertions (<span class="font-mono">MATCH / MISMATCH</span>) with evidence-backed candidate business hypothesis generation, apple-to-apple run-rate checks, separate unjoined sentiment signals, and human-in-the-loop 1-page Insight Memo export.
-            </p>
-            <div class="mt-4 flex flex-wrap">
-              <span class="chip">FastAPI</span>
-              <span class="chip">DuckDB</span>
-              <span class="chip">KPI Assertions</span>
-              <span class="chip">Hypothesis Engine</span>
-              <span class="chip">Nuxt 3</span>
-              <span class="chip">Bilingual ID/EN</span>
-            </div>
-          </div>
-
-          <div class="acts flex gap-2.5 flex-wrap mt-5">
-            <a
-              class="btn p"
-              href="https://kpireconcilerhypothesis-exw42ie53-nusaibah-fathul-jannah.vercel.app"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Live App ↗
-            </a>
-            <a
-              class="btn o"
-              href="https://github.com/NusaibahF-IT/KPI-Reconciler-Hypothesis-Workbench"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              GitHub ↗
-            </a>
-          </div>
-        </article>
-
-        <!-- Project 6: Safe ETL, Cleaning & Multi-Source Join Workbench (4 cols) -->
-        <article class="card md:col-span-4 relative border border-line flex flex-col justify-between">
-          <span class="sticker tiny absolute right-4 top-[-14px]">Data Analyst Tool 03</span>
           <div>
             <h3 class="text-lg font-extrabold text-tx">
               Safe ETL, Cleaning &amp; Multi-Source Join Workbench (ID / EN)
@@ -222,6 +182,46 @@
             <a
               class="btn o"
               href="https://github.com/NusaibahF-IT/Safe-ETL-Cleaning-Join-Workbench"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub ↗
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 6: KPI Reconciler & Business Hypothesis Workbench (4 cols) -->
+        <article class="card md:col-span-4 relative border border-line flex flex-col justify-between">
+          <span class="sticker tiny absolute right-4 top-[-14px]">Data Analyst Tool 03</span>
+          <div>
+            <h3 class="text-lg font-extrabold text-tx">
+              KPI Reconciler &amp; Business Hypothesis Workbench (ID / EN)
+            </h3>
+            <p class="mini text-tx/85 text-[13px] mt-2.5 leading-relaxed">
+              Domain-agnostic analytical workbench pairing independent DuckDB KPI assertions (<span class="font-mono">MATCH / MISMATCH</span>) with evidence-backed candidate business hypothesis generation, apple-to-apple run-rate checks, separate unjoined sentiment signals, and human-in-the-loop 1-page Insight Memo export.
+            </p>
+            <div class="mt-4 flex flex-wrap">
+              <span class="chip">FastAPI</span>
+              <span class="chip">DuckDB</span>
+              <span class="chip">KPI Assertions</span>
+              <span class="chip">Hypothesis Engine</span>
+              <span class="chip">Nuxt 3</span>
+              <span class="chip">Bilingual ID/EN</span>
+            </div>
+          </div>
+
+          <div class="acts flex gap-2.5 flex-wrap mt-5">
+            <a
+              class="btn p"
+              href="https://kpireconcilerhypothesis.vercel.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Live App ↗
+            </a>
+            <a
+              class="btn o"
+              href="https://github.com/NusaibahF-IT/KPI-Reconciler-Hypothesis-Workbench"
               target="_blank"
               rel="noopener noreferrer"
             >
